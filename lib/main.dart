@@ -19,11 +19,10 @@ class MyApp extends StatelessWidget {
 }
 
 void _showModalTwo(BuildContext context) {
-  final bloc = BlocProvider.of<TickerBloc>(context);
   showModalBottomSheet<int>(
       backgroundColor: Colors.transparent,
       context: context,
-      builder: (BuildContext context) {
+      builder: (BuildContext _) {
         final bloc = BlocProvider.of<TickerBloc>(context);
         return Container(
           color: Colors.transparent,
